@@ -1,0 +1,71 @@
+/* Estilos gerais do documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Estilos do contêiner do formulário */
+.container {
+    background-color: #ffffff; /* Cor de fundo do contêiner */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 30px; /* Espaçamento interno */
+    width: 350px; /* Largura do contêiner */
+    max-width: 100%; /* Largura máxima para dispositivos menores */
+    text-align: center; /* Alinhamento central do conteúdo */
+}
+
+/* Estilos das etiquetas (labels) do formulário */
+form label {
+    display: block; /* Exibir como bloco para ocupar toda a largura */
+    margin-bottom: 8px; /* Espaçamento inferior */
+    font-weight: bold; /* Texto em negrito */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilos dos campos de entrada do formulário */
+form input {
+    width: 100%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    border: 1px solid #ccc; /* Borda com cor cinza */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 14px; /* Tamanho da fonte */
+    transition: border-color 0.3s; /* Transição suave da cor da borda */
+}
+
+/* Estilos dos campos de entrada quando estão em foco */
+form input:focus {
+    border-color: #007bff; /* Cor da borda em foco */
+    outline: none; /* Remover contorno padrão do foco */
+}
+
+/* Estilos do botão de envio do formulário */
+form button {
+    background-color: #007bff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 12px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro ao passar por cima */
+    transition: background-color 0.3s; /* Transição suave da cor de fundo */
+}
+
+/* Estilos do botão de envio do formulário ao passar por cima */
+form button:hover {
+    background-color: #0056b3; /* Cor de fundo alterada */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px; /* Espaçamento interno reduzido para dispositivos menores */
+    }
+}
